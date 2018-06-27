@@ -20,4 +20,4 @@ class ContactDelete {
     }
 }
 
-export default ContactDelete
+module.exports = ContactDelete

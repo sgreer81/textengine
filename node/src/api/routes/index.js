@@ -1,10 +1,10 @@
-import express from 'express'
+const express = require('express')
 let router = express.Router()
 
-import contacts from './contacts'
-import contact from './contact'
+const contacts = require('./contacts')
+const contact = require('./contact')
 
 router.use('/api/v1', contacts)
 router.use('/api/v1', contact)
 
-export default router
+module.exports = router

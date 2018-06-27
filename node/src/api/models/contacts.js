@@ -1,6 +1,6 @@
-import Sequelize from 'sequelize'
+const Sequelize = require('sequelize')
 
-import db from './db'
+const db = require('./db')
 
 const ContactsModel = db.define('contacts', {
     phoneNumber: { type: Sequelize.STRING(50), unique: true },
@@ -101,4 +101,4 @@ class Contacts {
     }
 }
 
-export default Contacts
+module.exports = Contacts

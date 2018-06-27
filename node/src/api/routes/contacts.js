@@ -1,8 +1,8 @@
-import express from 'express'
+const express = require('express')
 let router = express.Router()
 
-import ContactsList from '../actions/get/contactsList'
-import ContactsModel from '../models/contacts'
+const ContactsList = require('../actions/get/contactsList')
+const ContactsModel = require('../models/contacts')
 
 router.get('/contacts', (req, res) => {
     const contactsModel = new ContactsModel()
@@ -14,4 +14,4 @@ router.get('/contacts', (req, res) => {
         )
 })
 
-export default router
+module.exports = router

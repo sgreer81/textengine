@@ -1,11 +1,11 @@
-import express from 'express'
+const express = require('express')
 let router = express.Router()
 
-import ContactSingle from '../actions/get/contactSingle'
-import ContactNew from '../actions/post/contactNew'
-import ContactUpdate from '../actions/post/contactUpdate'
-import ContactDelete from '../actions/delete/contactDelete'
-import ContactsModel from '../models/contacts'
+const ContactSingle = require('../actions/get/contactSingle')
+const ContactNew = require('../actions/post/contactNew')
+const ContactUpdate = require('../actions/post/contactUpdate')
+const ContactDelete = require('../actions/delete/contactDelete')
+const ContactsModel = require('../models/contacts')
 
 /**
  * Get a contact by ID
@@ -59,4 +59,4 @@ router.delete('/contact/:id', (req, res) => {
         )
 })
 
-export default router
+module.exports = router

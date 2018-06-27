@@ -25,4 +25,4 @@ class ContactNew {
     }
 }
 
-export default ContactNew
+module.exports = ContactNew

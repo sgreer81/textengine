@@ -15,4 +15,4 @@ class ContactsList {
     }
 }
 
-export default ContactsList
+module.exports = ContactsList

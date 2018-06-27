@@ -20,4 +20,4 @@ class ContactSingle {
     }
 }
 
-export default ContactSingle
+module.exports = ContactSingle

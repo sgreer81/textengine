@@ -26,4 +26,4 @@ class ContactUpdate {
     }
 }
 
-export default ContactUpdate
+module.exports = ContactUpdate

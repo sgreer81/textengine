@@ -1,4 +1,4 @@
-import Sequelize from 'sequelize'
+const Sequelize = require('sequelize')
 
 const db = new Sequelize('express', 'root', 'express', {
     host: 'db',
@@ -24,4 +24,4 @@ db
         console.error('Unable to connect to the database:', err)
     })
 
-export default db
+module.exports = db
