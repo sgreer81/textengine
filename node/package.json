@@ -15,6 +15,7 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "express": "^4.16.3",
+    "mongoose": "^5.1.7",
     "mysql2": "^1.5.3",
     "npm": "^5.8.0",
     "sequelize": "^4.37.6"

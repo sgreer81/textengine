@@ -24,8 +24,8 @@ router.get('/contact/:id', (req, res) => {
  * Create a new contact
  */
 router.post('/contact/', (req, res) => {
-    const contactsModel = new ContactsModel()
-    const contactAction = new ContactNew(contactsModel)
+    // const contactsModel = new ContactsModel()
+    const contactAction = new ContactNew()
 
     contactAction.action(req.body)
         .then(results =>

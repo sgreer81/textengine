@@ -5,8 +5,8 @@ class ContactNew {
      * 
      * @param {Contacts} contactModel The contacts model object 
      */
-    constructor(contactModel) {
-        this.contactModel = contactModel
+    constructor() {
+        // this.contactModel = contactModel
         this.action = this.action.bind(this)
     }
 
@@ -21,7 +21,8 @@ class ContactNew {
      */
     action(contact) {
         // TODO: Need to add validation
-        return this.contactModel.add(contact)
+        console.log('thing!', this.contactModel)
+        // return this.contactModel.add(contact)
     }
 }
 
